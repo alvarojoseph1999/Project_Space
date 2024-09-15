@@ -1,33 +1,469 @@
 <!DOCTYPE html>
-<html lang="es">
+<html
+  data-wf-domain="alffss-dynamite-site.webflow.io"
+  data-wf-page="66e3a3499607e61eee967bc3"
+  data-wf-page="66d7d4559d8389f532a95b0f"
+  data-wf-site="66e3a3499607e61eee967b61"
+  data-wf-status="1"
+>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Animaciones de Desplazamiento en 3 Columnas</title>
-    <link rel="stylesheet" href="stylep1.css" />
+    <meta charset="utf-8" />
+    <title>Prueba Space Web</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+
+    <!-- Espacio -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- animacion AOI -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css" />
+    <!-- ###### -->
+    <link rel="stylesheet" href="styleEspacio.css" type="text/css" />
   </head>
   <body>
     <header>
-      <div class="navbar">
-        <div class="logo">
-            <a href="#">Web Deb Logo</a>
-            <div>
-                <ul>
-                    <li><a href="home">Home</a></li>
-                    <li><a href="about">About</a></li>
-                    <li><a href="services">Services</a></li>
-                    <li><a href="contact">Contact</a></li>
-                  </ul>
-                  <a href="#" class="action_btn" > Get Started</a>
-                  <div class="toggle_btn">
-                    <i class="fa-solid fa-bars"></i>
-                  </div>
-            </div>
+      <div class="banner">
+        <video autoplay loop muted plays-inline>
+          <source src="video.mp4" type="video/mp4" />
+        </video>
+        <!-- Navegador -->
+        <div class="navbar">
+          <img class="logo" src="nasa.png" />
+          <ul class="links">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#">Prediccion</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+          <!-- <a href="#" class="action_btn">Get Started </a> -->
+          <div class="toggle_btn">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+        <div class="dropdown_menu">
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Nosotros</a></li>
+          <li><a href="#">Prediccion</a></li>
+          <li><a href="#">Contacto</a></li>
+          <li><a href="#" class="action_btn">Get Started </a></li>
         </div>
       </div>
     </header>
 
-    <script src="scriptp1.js"></script>
+    <div class="content">
+      <h1>Prediccion</h1>
+    </div>
+    <div class="main-wrapper">
+      <section id="3-column-scroll-start" class="section-3-column-scroll">
+        <div
+          data-w-id="cdef4909-a5e5-a23b-2b8b-e7be39f696a1"
+          class="column-scroll-wrapper"
+        >
+          <div class="column-scroll-sticky">
+            <div class="column-scroll-sticky-inner">
+              <div class="column-scroll-item is-3">
+                <img
+                  src="img1.jpg"
+                  loading="lazy"
+                  alt=""
+                  class="column-scroll-image"
+                />
+              </div>
+              <div class="column-scroll-item is-2">
+                <img
+                  src="img2.jpg"
+                  loading="lazy"
+                  alt=""
+                  class="column-scroll-image"
+                />
+              </div>
+              <div class="column-scroll-item is-1">
+                <img
+                  src="img3.jpg"
+                  loading="lazy"
+                  alt=""
+                  class="column-scroll-image"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column-scroll-content-wrapper">
+          <div class="page-padding">
+            <div class="column-scroll-content">
+              <div class="overflow-hidden">
+                <div class="column-scroll-content-title is-1">Welcome</div>
+              </div>
+              <div class="overflow-hidden">
+                <div class="column-scroll-content-title is-2">to Mars</div>
+              </div>
+              <div class="column-scroll-content-copy">
+                <p class="column-scroll-content-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Suspendisse varius enim in eros elementum tristique. Duis
+                  cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
+                  commodo diam libero vitae erat.
+                </p>
+
+                <div class="spacer-sm-end"></div>
+                <a href="#" class="button w-button">Button Text</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Video -->
+      <section id="tutorial" class="section-tutorial">
+        <div class="page-padding">
+          <div class="container-medium">
+            <a
+              href="https://youtu.be/6rFm85ROcJg"
+              target="_blank"
+              class="video-preview-wrapper w-inline-block"
+            >
+              <img
+                src="https://cdn.prod.website-files.com/65f83352d44ce1910698e01e/65fa9ed1d1c39db4e3f5655a_3%20Spalten%20Scroll%20Animation-youtube.jpg"
+                loading="lazy"
+                alt=""
+                class="video-preview-img"
+              />
+              <div class="youtube-play-button">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 -960 960 960"
+                  width="100%"
+                  fill="currentcolor"
+                  class="youtube-play-icon"
+                >
+                  <path d="M320-200v-560l440 280-440 280Z"></path>
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- PRUEBA -->
+
+    <div>
+      <div class="destination__images"></div>
+      <div id="about" class="why-go-with-spaced">
+        <div class="orange-divider-cenetred">
+          <div class="third-top"></div>
+        </div>
+        <h4 class="white-h4">Why Go With Spaced</h4>
+        <div class="center-this">
+          <div class="flexed-row fold w-row">
+            <div class="column-5 w-col w-col-6 w-col-stack">
+              <div
+                data-delay="4000"
+                data-animation="slide"
+                class="rounded-slider w-slider"
+                data-autoplay="true"
+                data-easing="ease"
+                data-hide-arrows="false"
+                data-disable-swipe="false"
+                data-autoplay-limit="0"
+                data-nav-spacing="3"
+                data-duration="500"
+                data-infinite="true"
+              >
+                <div class="mask w-slider-mask">
+                  <div class="w-slide">
+                    <img
+                      src="https://cdn.prod.website-files.com/66e3a3499607e61eee967b61/66e3a3499607e61eee967bd5_Dann.jpg"
+                      alt=""
+                      class="profile-card"
+                    />
+                    <div class="bottom-slider-bar">
+                      <div class="text-block">Captain Dan Petty</div>
+                      <div class="title">Owner / CD</div>
+                    </div>
+                  </div>
+                  <div class="slide w-slide">
+                    <img
+                      src="https://cdn.prod.website-files.com/66e3a3499607e61eee967b61/66e3a3499607e61eee967c0e_mike.jpg"
+                      alt=""
+                      class="profile-card unicorn"
+                    />
+                    <div class="bottom-slider-bar">
+                      <div class="text-block">Mike Delsing</div>
+                      <div class="title">Lead Designer</div>
+                    </div>
+                  </div>
+                  <div class="slide w-slide">
+                    <img
+                      src="https://cdn.prod.website-files.com/66e3a3499607e61eee967b61/66e3a3499607e61eee967bd6_waldo.jpg"
+                      alt=""
+                      class="profile-card unicorn"
+                    />
+                    <div class="bottom-slider-bar">
+                      <div class="text-block">Waldo Broodryk</div>
+                      <div class="title">Web Designer</div>
+                    </div>
+                  </div>
+                  <div class="slide w-slide">
+                    <img
+                      src="https://cdn.prod.website-files.com/66e3a3499607e61eee967b61/66e3a3499607e61eee967c09_space-unicorn.jpg"
+                      alt=""
+                      class="profile-card unicorn"
+                    />
+                    <div class="bottom-slider-bar">
+                      <div class="text-block">Bubbles</div>
+                      <div class="title">Primary Unicorn</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="arrow left w-slider-arrow-left">
+                  <div class="w-icon-slider-left"></div>
+                </div>
+                <div class="arrow w-slider-arrow-right">
+                  <div class="w-icon-slider-right"></div>
+                </div>
+                <div class="slide-nav w-slider-nav w-round"></div>
+              </div>
+            </div>
+            <!-- ANIMACION SCROLL -->
+            <div class="column-3 w-col w-col-6 w-col-stack" >
+              <div class="activity-pill centered" data-aos="zoom-in-down" data-aos-duration="3000">
+                <img
+                  src="https://cdn.prod.website-files.com/66e3a3499607e61eee967b61/66e3a3499607e61eee967bfe_musk.png"
+                  alt=""
+                  class="image-3"/>
+                <div class="pill-description small">
+                  <div class="stars">★★★★★</div>
+                  <div class="activity-sub-heading">Stellar Experience!</div>
+                  <p class="paragraph">
+                    “ I had an X-tremely good time on mars.”
+                  </p>
+                  <p class="paragraph">Elon Musk</p>
+                </div>
+              </div>
+              <div class="activity-pill centered" data-aos="zoom-in-down" data-aos-duration="3000">
+                <img
+                  src="https://cdn.prod.website-files.com/66e3a3499607e61eee967b61/66e3a3499607e61eee967be7_rey-kanobi.png"
+                  alt=""
+                  class="image-3"/>
+                <div class="pill-description small">
+                  <div class="stars">★★★★★</div>
+                  <div class="activity-sub-heading">Went Solo, Still Fun</div>
+                  <p class="paragraph">
+                    “I went straight to the dark side of the moon.”
+                  </p>
+                  <p class="paragraph">Rey Kenobi</p>
+                </div>
+              </div>
+              <div class="activity-pill centered" data-aos="zoom-in-down" data-aos-duration="3000">
+                <img
+                  src="https://cdn.prod.website-files.com/66e3a3499607e61eee967b61/66e3a3499607e61eee967bde_degrasse.png"
+                  alt=""
+                  class="image-3"
+                />
+                <div class="pill-description small">
+                  <div class="stars">★★★★★</div>
+                  <div class="activity-sub-heading">
+                    My Room Had alot of Space
+                  </div>
+                  <p class="paragraph">“Space was cool before it mattered.”</p>
+                  <p class="paragraph">Neil deGrasse Tyson</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FIN PRUEBA -->
+
+    <!-- ESPACIO -->
+
+    <div>
+      <div class="destination__images"></div>
+      <div id="about" class="why-go-with-spaced">
+        <div class="orange-divider-cenetred">
+          <div class="third-top"></div>
+        </div>
+        <h4 class="white-h4">Why Go With Spaced</h4>
+        <div class="center-this">
+          <div class="flexed-row fold w-row">
+            <div class="column-5 w-col w-col-6 w-col-stack">
+              <div
+                data-delay="4000"
+                data-animation="slide"
+                class="rounded-slider w-slider"
+                data-autoplay="true"
+                data-easing="ease"
+                data-hide-arrows="false"
+                data-disable-swipe="false"
+                data-autoplay-limit="0"
+                data-nav-spacing="3"
+                data-duration="500"
+                data-infinite="true"
+              >
+                <div class="mask w-slider-mask">
+                  <div class="w-slide">
+                    <img
+                      src="https://cdn.prod.website-files.com/66e3a3499607e61eee967b61/66e3a3499607e61eee967bd5_Dann.jpg"
+                      alt=""
+                      class="profile-card"
+                    />
+                    <div class="bottom-slider-bar">
+                      <div class="text-block">Captain Dan Petty</div>
+                      <div class="title">Owner / CD</div>
+                    </div>
+                  </div>
+                  <div class="slide w-slide">
+                    <img
+                      src="https://cdn.prod.website-files.com/66e3a3499607e61eee967b61/66e3a3499607e61eee967c0e_mike.jpg"
+                      alt=""
+                      class="profile-card unicorn"
+                    />
+                    <div class="bottom-slider-bar">
+                      <div class="text-block">Mike Delsing</div>
+                      <div class="title">Lead Designer</div>
+                    </div>
+                  </div>
+                  <div class="slide w-slide">
+                    <img
+                      src="https://cdn.prod.website-files.com/66e3a3499607e61eee967b61/66e3a3499607e61eee967bd6_waldo.jpg"
+                      alt=""
+                      class="profile-card unicorn"
+                    />
+                    <div class="bottom-slider-bar">
+                      <div class="text-block">Waldo Broodryk</div>
+                      <div class="title">Web Designer</div>
+                    </div>
+                  </div>
+                  <div class="slide w-slide">
+                    <img
+                      src="https://cdn.prod.website-files.com/66e3a3499607e61eee967b61/66e3a3499607e61eee967c09_space-unicorn.jpg"
+                      alt=""
+                      class="profile-card unicorn"
+                    />
+                    <div class="bottom-slider-bar">
+                      <div class="text-block">Bubbles</div>
+                      <div class="title">Primary Unicorn</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="arrow left w-slider-arrow-left">
+                  <div class="w-icon-slider-left"></div>
+                </div>
+                <div class="arrow w-slider-arrow-right">
+                  <div class="w-icon-slider-right"></div>
+                </div>
+                <div class="slide-nav w-slider-nav w-round"></div>
+              </div>
+            </div>
+            <div
+              data-w-id="93b58869-48b4-9c8c-fdd9-51763ccb425a"
+              class="column-3 w-col w-col-6 w-col-stack"
+            >
+              <div
+                data-w-id="309dffe6-b562-6355-fe41-8328e22c6d17"
+                class="activity-pill centered"
+              >
+                <img
+                  src="https://cdn.prod.website-files.com/66e3a3499607e61eee967b61/66e3a3499607e61eee967bfe_musk.png"
+                  alt=""
+                  class="image-3"
+                />
+                <div class="pill-description small">
+                  <div class="stars">★★★★★</div>
+                  <div class="activity-sub-heading">Stellar Experience!</div>
+                  <p class="paragraph">
+                    “ I had an X-tremely good time on mars.”
+                  </p>
+                  <p class="paragraph">Elon Musk</p>
+                </div>
+              </div>
+              <div
+                data-w-id="4a1ae388-9544-3962-587e-5c68fcedcb50"
+                class="activity-pill centered"
+              >
+                <img
+                  src="https://cdn.prod.website-files.com/66e3a3499607e61eee967b61/66e3a3499607e61eee967be7_rey-kanobi.png"
+                  alt=""
+                  class="image-3"
+                />
+                <div class="pill-description small">
+                  <div class="stars">★★★★★</div>
+                  <div class="activity-sub-heading">Went Solo, Still Fun</div>
+                  <p class="paragraph">
+                    “I went straight to the dark side of the moon.”
+                  </p>
+                  <p class="paragraph">Rey Kenobi</p>
+                </div>
+              </div>
+              <div
+                data-w-id="995b82e1-a248-c262-859c-511952db7396"
+                class="activity-pill centered"
+              >
+                <img
+                  src="https://cdn.prod.website-files.com/66e3a3499607e61eee967b61/66e3a3499607e61eee967bde_degrasse.png"
+                  alt=""
+                  class="image-3"
+                />
+                <div class="pill-description small">
+                  <div class="stars">★★★★★</div>
+                  <div class="activity-sub-heading">
+                    My Room Had alot of Space
+                  </div>
+                  <p class="paragraph">“Space was cool before it mattered.”</p>
+                  <p class="paragraph">Neil deGrasse Tyson</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer"></div>
+
+    <script>
+      const toggleBtn = document.querySelector(".toggle_btn");
+      const toggleBtnIcon = document.querySelector(".toggle_btn i");
+      const dropDownMenu = document.querySelector(".dropdown_menu");
+
+      toggleBtn.onclick = function () {
+        dropDownMenu.classList.toggle("open");
+        const isOpen = dropDownMenu.classList.contains("open");
+
+        toggleBtnIcon.classList = isOpen
+          ? "fa-solid fa-xmark"
+          : "fa-solid fa-bars";
+      };
+    </script>
+
+    <!-- <script
+      src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=66e3a3499607e61eee967b61"
+      type="text/javascript"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script> -->
+    <!-- ANIMACION AOI -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <script src="jquery.js"></script>
+    <script src="scripEspacio.js"></script>
+    <script src="script.js"></script>
+
+    <!-- <script
+      src="https://cdn.prod.website-files.com/66e3a3499607e61eee967b61/js/webflow.3d2b96407.js"
+      type="text/javascript"
+    ></script> -->
   </body>
 </html>
