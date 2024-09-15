@@ -2067,7 +2067,7 @@ html {
   
   body {
     color: #333;
-    background-image: url("https://d3e54v103j8qbb.cloudfront.net/img/background-image.svg");
+    /* background-image: url("https://d3e54v103j8qbb.cloudfront.net/img/background-image.svg"); */
     background-position: 50% 0;
     background-repeat: repeat-y;
     background-size: 100%;
