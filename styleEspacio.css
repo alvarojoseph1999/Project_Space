@@ -293,7 +293,7 @@ html {
   .w-optimization {
     display: contents;
   }
-  
+/*   
   .w-webflow-badge, .w-webflow-badge * {
     z-index: auto;
     visibility: visible;
@@ -373,7 +373,7 @@ html {
     opacity: 1 !important;
     vertical-align: middle !important;
     display: inline-block !important;
-  }
+  } */
   
   h1, h2, h3, h4, h5, h6 {
     margin-bottom: 10px;
@@ -1185,8 +1185,8 @@ html {
   .w-slider {
     text-align: center;
     clear: both;
-    -webkit-tap-highlight-color: #0000;
-    tap-highlight-color: #0000;
+    -webkit-tap-highlight-color: #29d75e00;
+    tap-highlight-color: #e81a1a00;
     background: #ddd;
     height: 300px;
     position: relative;
@@ -1865,6 +1865,7 @@ html {
     left: 0;
     right: 0;
     overflow: hidden;
+    
   }
   
   .w-nav-overlay [data-nav-menu-open] {

@@ -82,7 +82,7 @@ p {
 .banner {
   width: 100%;
   height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));  hacia negro el video*/
   background-position: center;
   background-size: center;
 }
