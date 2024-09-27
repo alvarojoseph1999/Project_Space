@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NASA Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="dashb.css">
+</head>
+<body>
+
+  <div class="container my-5">
+    <!-- First row with weather information -->
+    <div class="row text-center">
+      <div class="col-md-3">
+        <div class="info-box">
+          <p>Temperatura</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="info-box">
+          <p>Humedad del suelo 2MT</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="info-box">
+          <p>Precipitación</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="info-box">
+          <p>Reflectancia del SOL</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Second row with recommendations and other info -->
+    <div class="row my-4">
+      <div class="col-md-4">
+        <div class="info-box">
+          <p>Campo de entrada 1</p>
+        </div>
+        <div class="info-box">
+          <p>Campo de entrada 2</p>
+        </div>
+        <div class="info-box">
+          <p>Campo de entrada 3</p>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div class="info-box big-box">
+          <p>Sección gráfica principal</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="info-box big-box">
+          <p>Recomendación de productos por temporada</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Third row with charts -->
+    <div class="row my-4">
+      <div class="col-md-6">
+        <div class="info-box">
+          <p>Uso de agua diario</p>
+          <canvas id="waterUsageChart"></canvas>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="info-box">
+          <p>Uso de insecticidas por tipo y cantidad</p>
+          <canvas id="insecticideUsageChart"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fourth row with expert consultations -->
+    <div class="row my-4">
+      <div class="col-md-9">
+        <div class="info-box">
+          <p>Preguntas y consultas con expertos</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="info-box">
+          <p>Preguntas más frecuentes y respuestas</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fifth row with news section -->
+    <div class="row my-4">
+      <div class="col-md-12">
+        <div class="info-box">
+          <p>Sección noticias</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>
