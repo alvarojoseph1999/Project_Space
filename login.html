@@ -24,19 +24,19 @@
     class="img js-fullheight"
     style="
       background-image: url(img/imgagr.jpg);
-      /* background-color: rgba(0, 0, 0, 0.5); */
+
       background-blend-mode: darken;
     "
   >
-    <section class="ftco-section ">
+    <section class="ftco-section">
       <div class="container">
-        <div class="row justify-content-center ">
+        <div class="row justify-content-center">
           <div class="col-md-6 text-center mb-5">
-            <!-- <h2 class="heading-section">Login #10</h2> -->
+            <!-- <h2 class="heading-section">Login</h2> -->
           </div>
         </div>
         <div class="row justify-content-center">
-          <div class="col-md-6 col-lg-4">
+          <div class="col-12 col-md-8 col-lg-4">
             <div class="login-wrap p-4">
               <h3 class="mb-4 text-center">Ingresar Cuenta</h3>
               <form action="#" class="signin-form">
@@ -63,13 +63,23 @@
                 </div>
                 <div class="form-group">
                   <button
-                    type="submit"
-                    class="form-control btn btn-primary submit px-3"
+                    type="button"
+                    class="btn btn-primary btn-block"
+                    onclick="iniciarSesion()"
                   >
-                    Iniciar Sesion
+                    Iniciar Sesión
                   </button>
                 </div>
-                <div class="form-group d-md-flex">
+                <div class="form-group"></div>
+                  <button
+                    type="button"
+                    class="btn btn-primary btn-block"
+                    onclick="iniciarSesion_2()"
+                  >
+                    Iniciar Sesión 2
+                  </button>
+                </div>
+                <div class="form-group d-md-flex justify-content-between">
                   <div class="w-50">
                     <label class="checkbox-wrap checkbox-primary"
                       >Remember Me
@@ -77,25 +87,41 @@
                       <span class="checkmark"></span>
                     </label>
                   </div>
-                  <div class="w-50 text-md-right">
-                    <a href="#" style="color: #fff">Forgot Password</a>
+                  <div class="w-50 text-right">
+                    <a href="#" class="text-secondary">Forgot Password?</a>
                   </div>
                 </div>
               </form>
-              <!-- <p class="w-100 text-center">&mdash; Or Sign In With &mdash;</p>
-              <div class="social d-flex text-center">
-                <a href="#" class="px-2 py-2 mr-md-1 rounded"
-                  ><span class="ion-logo-facebook mr-2"></span> Facebook</a
-                >
-                <a href="#" class="px-2 py-2 ml-md-1 rounded"
-                  ><span class="ion-logo-twitter mr-2"></span> Twitter</a
-                >
-              </div> -->
+              <!-- Opcional: Redes Sociales -->
+              <!-- 
+            <p class="w-100 text-center">&mdash; Or Sign In With &mdash;</p>
+            <div class="social d-flex text-center">
+              <a href="#" class="px-2 py-2 mr-md-1 rounded"
+                ><span class="ion-logo-facebook mr-2"></span> Facebook</a>
+              <a href="#" class="px-2 py-2 ml-md-1 rounded"
+                ><span class="ion-logo-twitter mr-2"></span> Twitter</a>
             </div>
+            --></div>
           </div>
         </div>
       </div>
     </section>
+
+    <script>
+      function iniciarSesion() {
+        // Aquí puedes agregar la lógica de validación si es necesario
+        // Por ejemplo, si la validación es exitosa:
+        window.location.href = "dash/dashboard_uno/template/demo/index.html"; // Cambia 'pagina-destino.html' por la URL a la que deseas redirigir
+      }
+    </script>
+    <script>
+      function iniciarSesion_2() {
+        // Aquí puedes agregar la lógica de validación si es necesario
+        // Por ejemplo, si la validación es exitosa:
+        window.location.href = "dash/dashboard_dos/index.html"; // Cambia 'pagina-destino.html' por la URL a la que deseas redirigir
+      }
+    </script>
+
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.js"></script>
     <script src="js/bootstrap.min.js"></script>
