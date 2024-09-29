@@ -1,0 +1,48 @@
+<?php
+// URL de la API de FIRMS para obtener los datos en formato CSV
+$api_url = 'https://firms.modaps.eosdis.nasa.gov/api/country/csv/USA/VIIRS_SNPP_NRT';
+
+// Usar file_get_contents para obtener el contenido del CSV
+$data = file_get_contents($api_url);
+
+if ($data === FALSE) {
+    echo 'Error al obtener los datos';
+} else {
+    // Convertir el CSV en un array
+    $rows = explode("\n", $data);
+    array_shift($rows); // Eliminar el encabezado del CSV
+
+    // Mostrar latitud y longitud
+    foreach ($rows as $row) {
+        $columns = str_getcsv($row);
+        if (isset($columns[0]) && isset($columns[1])) {
+            echo "<p>Latitud: {$columns[0]}, Longitud: {$columns[1]}</p>";
+        }
+    }
+}
+?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIRMS Data with PHP</title>
+    <style>
+        /* Aquí tu CSS */
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #data-container {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>FIRMS Data: Latitud y Longitud</h1>
+    <div id="data-container">
+        <?php include 'fetch_data.php'; ?>
+    </div>
+</body>
+</html>
