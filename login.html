@@ -23,11 +23,13 @@
   <body
     class="img js-fullheight"
     style="
-      background-image: url(img/imgagr.jpg);
-
+      background-image: url(img/loginimage.jpg);
       background-blend-mode: darken;
     "
   >
+  <div class="spinner-grow" role="status">
+    <span class="sr-only">Loading...</span>
+  </div>
     <section class="ftco-section">
       <div class="container">
         <div class="row justify-content-center">
@@ -35,11 +37,11 @@
             <!-- <h2 class="heading-section">Login</h2> -->
           </div>
         </div>
-        <div class="row justify-content-center">
-          <div class="col-12 col-md-8 col-lg-4">
+        <div class="row justify-content-center" >
+          <div class="col-12 col-md-8 col-lg-4" >
             <div class="login-wrap p-4">
-              <h3 class="mb-4 text-center">Ingresar Cuenta</h3>
-              <form action="#" class="signin-form">
+              <h3 class="mb-4 text-center">Login Account</h3>
+              <form action="#" class="signin-form" >
                 <div class="form-group">
                   <input
                     type="text"
@@ -67,27 +69,27 @@
                     class="btn btn-primary btn-block"
                     onclick="iniciarSesion()"
                   >
-                    Iniciar Sesión
+                  Login
                   </button>
                 </div>
-                <div class="form-group"></div>
+                <div class="form-group "></div>
                   <button
                     type="button"
-                    class="btn btn-primary btn-block"
-                    onclick="iniciarSesion_2()"
+                    class="btn btn-secondary btn-block"
+                    onclick="iniciarSesion()"
                   >
-                    Iniciar Sesión 2
+                  Register user
                   </button>
                 </div>
-                <div class="form-group d-md-flex justify-content-between">
-                  <div class="w-50">
+                <div class="form-group d-md-flex justify-content-between" style="margin-top: -50px; ">
+                  <div class="w-50" style="margin-left: 35px;">
                     <label class="checkbox-wrap checkbox-primary"
                       >Remember Me
                       <input type="checkbox" checked />
                       <span class="checkmark"></span>
                     </label>
                   </div>
-                  <div class="w-50 text-right">
+                  <div class="w-50 text-right" style="margin-right: 35px;">
                     <a href="#" class="text-secondary">Forgot Password?</a>
                   </div>
                 </div>
@@ -111,14 +113,7 @@
       function iniciarSesion() {
         // Aquí puedes agregar la lógica de validación si es necesario
         // Por ejemplo, si la validación es exitosa:
-        window.location.href = "dash/dashboard_uno/template/demo/index.html"; // Cambia 'pagina-destino.html' por la URL a la que deseas redirigir
-      }
-    </script>
-    <script>
-      function iniciarSesion_2() {
-        // Aquí puedes agregar la lógica de validación si es necesario
-        // Por ejemplo, si la validación es exitosa:
-        window.location.href = "dash/dashboard_dos/index.html"; // Cambia 'pagina-destino.html' por la URL a la que deseas redirigir
+        window.location.href = "dash/dashboard_uno/template/demo/dashb.html"; // Cambia 'pagina-destino.html' por la URL a la que deseas redirigir
       }
     </script>
 
