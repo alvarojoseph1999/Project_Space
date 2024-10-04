@@ -30,6 +30,7 @@
     <link rel="stylesheet" href="styleEspacio.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="stylePersonal.css" />
+    <link rel="stylesheet" href="css/agriflow-template.webflow.fecaecfee.css">
   </head>
   <body>
     <header>
@@ -117,7 +118,6 @@
                   cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
                   commodo diam libero vitae erat.
                 </p>
-
                 <div class="spacer-sm-end"></div>
                 <a href="#" class="button w-button">BOTON PORSIACASO</a>
               </div>
@@ -156,6 +156,135 @@
         </div>
       </section>
     </div>
+
+    <!-- PARTE DEL PROYECTO -->
+
+    <section class="timeline-section">
+      <div class="w-layout-blockcontainer container w-container">
+        <div
+          style="
+            opacity: 1;
+            transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+              rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+            transform-style: preserve-3d;
+          "
+          class="timeline-main-wrap"
+        >
+          <div class="timeline-section-title-wrap">
+            <h2 class="section-title">Our Farming Techniques</h2>
+          </div>
+          <div class="timeline-area first-timeline">
+            <div class="timeline-title-wrap">
+              <h2 class="timeline-year">01</h2>
+              <h3 class="timeline-farmed-text">Strategic Farming Approach</h3>
+            </div>
+            <div class="timeline-line-break-wrap">
+              <div class="timeline-pointer-wrap">
+                <div class="timeline-green-pointer"></div>
+              </div>
+            </div>
+            <div class="timeline-content-wrap">
+              <p class="timeline-content">
+                Methodical Crop Cultivation Strategies Implemented.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-area second-timeline">
+            <div class="timeline-title-wrap">
+              <h2 class="timeline-year">02</h2>
+              <h3 class="timeline-farmed-text">
+                Skilled Cultivation Expertise
+              </h3>
+            </div>
+            <div class="timeline-line-break-wrap">
+              <div class="timeline-pointer-wrap">
+                <div class="timeline-green-pointer"></div>
+                <div class="timeline-leaf-wrap">
+                  <img
+                    src="https://cdn.prod.website-files.com/65e9524b0acdfabbfcd796e1/661647e28d56fe3a7be61749_timeline-leaf-1.svg"
+                    loading="lazy"
+                    style="
+                      opacity: 1;
+                      transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1)
+                        rotateX(0deg) rotateY(0deg) rotateZ(0deg)
+                        skew(0deg, 0deg);
+                      transform-style: preserve-3d;
+                    "
+                    data-w-id="edeb0925-1907-d978-c22b-0a56d6dc2948"
+                    alt="leaf image"
+                    class="timeline-leaf-image"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="timeline-content-wrap">
+              <p class="timeline-content">
+                Experienced Farmers Ensure Optimal Growth.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-area third-timeline">
+            <div class="timeline-title-wrap">
+              <h2 class="timeline-year">03</h2>
+              <h3 class="timeline-farmed-text">Rigorous Quality Checking</h3>
+            </div>
+            <div class="timeline-line-break-wrap">
+              <div class="timeline-pointer-wrap">
+                <div class="timeline-green-pointer"></div>
+                <div class="timeline-leaf-wrap">
+                  <img
+                    src="https://cdn.prod.website-files.com/65e9524b0acdfabbfcd796e1/66164584ec1d409703102519_timeline-leaf-1.svg"
+                    loading="lazy"
+                    alt="leaf image"
+                    class="timeline-leaf-image"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="timeline-content-wrap">
+              <p class="timeline-content">
+                Thorough Inspections Maintain High Standards.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-area">
+            <div class="timeline-title-wrap">
+              <h2 class="timeline-year">04</h2>
+              <h3 class="timeline-farmed-text">Timely Distribution Delivery</h3>
+            </div>
+            <div class="timeline-line-break-wrap">
+              <div class="timeline-pointer-wrap">
+                <div class="timeline-green-pointer"></div>
+                <div class="timeline-leaf-wrap">
+                  <img
+                    src="https://cdn.prod.website-files.com/65e9524b0acdfabbfcd796e1/661647e20aa96575111f0637_timeline-leaf-3.svg"
+                    loading="lazy"
+                    alt="leaf image"
+                    class="timeline-leaf-image"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="timeline-content-wrap">
+              <p class="timeline-content">
+                Prompt Delivery Ensures Freshness Preserved.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-line-break-image-wrap">
+            <img
+              src="https://cdn.prod.website-files.com/65e9524b0acdfabbfcd796e1/6618b9e67d06e7973e85513e_timeline-line-break-image.svg"
+              loading="lazy"
+              alt="time line image
+"
+              class="timeline-line-break-image"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FIN PARTE DEL PROYECTO -->
 
     <!-- PRUEBA 1 -->
     <div class="containerBody">
@@ -572,6 +701,22 @@
   </div> -->
     </footer>
 
+    <script>
+      window.addEventListener("scroll", () => {
+        const steps = document.querySelectorAll(".step");
+        const triggerBottom = (window.innerHeight / 5) * 4;
+
+        steps.forEach((step) => {
+          const boxTop = step.getBoundingClientRect().top;
+
+          if (boxTop < triggerBottom) {
+            step.classList.add("show");
+          } else {
+            step.classList.remove("show");
+          }
+        });
+      });
+    </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
