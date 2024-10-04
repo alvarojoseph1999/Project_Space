@@ -34,18 +34,54 @@
   <body>
     <header>
       <div class="banner">
-        <video autoplay loop muted plays-inline>
-          <source src="agricultura.mp4" type="video/mp4" />
+        <video id="miVideo" plays-inline>
+          <source src="video_agro.mp4" type="video/mp4" />
         </video>
+        <button id="btnRepeat">Activar Audio</button>
+        
+        <script>
+          const video = document.getElementById('miVideo');
+          const btnPlay = document.getElementById('btnRepeat');
+  
+          // Asegúrate de que el volumen esté al máximo
+          video.volume = 1.0;
+  
+          // Evento para reproducir el video al hacer clic en el botón
+          btnPlay.addEventListener('click', () => {
+              if (video.paused) { // Solo reproduce si el video está en pausa
+                  video.play(); // Reproduce el video
+                  btnPlay.style.display = 'none'; // Oculta el botón al reproducir
+              }
+          });
+  
+          // Cuando el video termine, se detiene y se restablece el tiempo
+        video.addEventListener('ended', () => {
+          video.pause(); // Detiene el video
+          video.currentTime = 0; // Reinicia el video a 0
+          btnPlay.style.display = 'block'; // Muestra el botón de reproducir nuevamente
+      });
+
+      // Asegúrate de que no se pueda reproducir nuevamente sin reiniciar el video
+      video.addEventListener('play', () => {
+          btnPlay.disabled = true; // Desactiva el botón mientras se reproduce
+      });
+
+      video.addEventListener('pause', () => {
+          btnPlay.disabled = false; // Activa el botón cuando está en pausa
+      });
+
+
+      </script>
+
         <!-- Navegador -->
         <div class="navbar">
           <img class="logo" src="img/nasa.png" />
           <ul class="links">
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Nosotros</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
             <li><a href="#">Prediccion</a></li>
-            <li><a href="#">Contacto</a></li>
-            <li><a href="login.html">Cuenta</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
           </ul>
           <!-- <a href="#" class="action_btn">Get Started </a> -->
           <div class="toggle_btn">
@@ -53,17 +89,20 @@
           </div>
         </div>
         <div class="dropdown_menu">
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Nosotros</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
           <li><a href="#">Prediccion</a></li>
-          <li><a href="#">Contacto</a></li>
+          <li><a href="#">Contact</a></li>
           <li><a href="#" class="action_btn">Get Started </a></li>
         </div>
+
+        <!-- AGREGANDO BOTON DE REPETICION DE VIDEO -->
       </div>
     </header>
 
-    <div class="content">
-      <h1>Prediccion</h1>
+    <div class="content" >
+      <h1>AGRONEXUS</h1>
+    
     </div>
 
     <div class="main-wrapper">
@@ -76,7 +115,7 @@
             <div class="column-scroll-sticky-inner">
               <div class="column-scroll-item is-3">
                 <img
-                  src="img/img1.jpg"
+                  src="img/img-agri.jpg"
                   loading="lazy"
                   alt=""
                   class="column-scroll-image"
@@ -84,7 +123,7 @@
               </div>
               <div class="column-scroll-item is-2">
                 <img
-                  src="img/img2.jpg"
+                  src="img/img-agri2.jpg"
                   loading="lazy"
                   alt=""
                   class="column-scroll-image"
@@ -92,7 +131,7 @@
               </div>
               <div class="column-scroll-item is-1">
                 <img
-                  src="img/img3.jpg"
+                  src="img/img-agri3.jpg"
                   loading="lazy"
                   alt=""
                   class="column-scroll-image"
@@ -105,17 +144,19 @@
           <div class="page-padding">
             <div class="column-scroll-content">
               <div class="overflow-hidden">
-                <div class="column-scroll-content-title is-1">BIENVENIDO</div>
+                <div class="column-scroll-content-title is-1">WELCOME TO</div>
               </div>
               <div class="overflow-hidden">
-                <div class="column-scroll-content-title is-2">A MOKEWA</div>
+                <div class="column-scroll-content-title is-2">AGRONEXUS</div>
               </div>
               <div class="column-scroll-content-copy">
                 <p class="column-scroll-content-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Suspendisse varius enim in eros elementum tristique. Duis
-                  cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
-                  commodo diam libero vitae erat.
+                  Welcome to the Agricultural Management System, where you can access the latest news about the industry,
+                  the impact of climate change, innovative farming techniques, and much more. Our goal is to help you make 
+                  informed decisions to improve your field’s productivity and promote sustainable agricultural practices. 
+                  <br><br>
+                  <b>!Explore the tools and resources available to optimize your production!</b>
+                  
                 </p>
 
                 <div class="spacer-sm-end"></div>
@@ -157,27 +198,30 @@
       </section>
     </div>
 
+    <!-- Agregando titulo de la seccion -->
+    <center><h2 class="black-h4">NEWS SECTION</h2></center>
+
     <!-- PRUEBA 1 -->
-    <div class="containerBody">
+    <div class="containerBody" style="margin-top: 0px; padding-top: 0px;">
       <div class="container">
         <!-- <div class="image-content"> -->
         <div class="sliderCenter">
           <div class="slider">
             <div class="list">
               <div class="item">
-                <img src="img/img1.jpg" alt="" />
+                <img src="img/not1.jpg" alt="" />
               </div>
               <div class="item">
-                <img src="img/img2.jpg" alt="" />
+                <img src="img/Noticia2.png" alt="" />
               </div>
               <div class="item">
-                <img src="img/img3.jpg" alt="" />
+                <img src="img/noticia3.png" alt="" />
               </div>
               <div class="item">
-                <img src="img/img1.jpg" alt="" />
+                <img src="img/noticia5.png" alt="" />
               </div>
               <div class="item">
-                <img src="img/img2.jpg" alt="" />
+                <img src="img/imagen4.png" alt="" />
               </div>
             </div>
             <div class="buttons">
@@ -296,7 +340,7 @@
         <div class="orange-divider-cenetred">
           <div class="third-top"></div>
         </div>
-        <h4 class="white-h4">EQUAIPO MARAVILLA</h4>
+        <h2 class="black-h3">MEET THE TEAM</h2>
         <div class="center-this">
           <div class="flexed-row fold w-row">
             <div class="column-5 w-col w-col-6 w-col-stack">
@@ -474,19 +518,19 @@
             </h4>
             <ul class="list-unstyled mb-0 text-dark">
               <li class="mb-1">
-                <a href="#!">INICIO</a>
+                <a href="#!">HOME</a>
               </li>
               <li class="mb-1">
-                <a href="#!">NOSOTROS</a>
+                <a href="#!">ABOUT</a>
               </li>
               <li class="mb-1">
                 <a href="#!">PREDICCION</a>
               </li>
               <li>
-                <a href="#!">CONTACTO</a>
+                <a href="#!">CONTACT</a>
               </li>
               <li>
-                <a href="#!">CUENTA</a>
+                <a href="#!">LOGIN</a>
               </li>
             </ul>
           </div>
@@ -500,9 +544,9 @@
               <div
                 class="d-flex justify-content-between align-items-center mb-2"
               >
-                <span>Alvaro Joseph Fernandez Flores</span>
+                <span>Sofia Quispe Salas</span>
                 <a
-                  href="https://www.linkedin.com/in/johndoe"
+                  href="https://pe.linkedin.com/in/sofia-quispe-salas"
                   target="_blank"
                   class="btn btn-primary btn-sm"
                 >
@@ -513,9 +557,9 @@
               <div
                 class="d-flex justify-content-between align-items-center mb-2"
               >
-                <span>Alvaro Joseph Fernandez Flores</span>
+                <span>Alvaro Fernandez Flores</span>
                 <a
-                  href="https://www.linkedin.com/in/janesmith"
+                  href="https://pe.linkedin.com/in/alvaro-fernandez-flores"
                   target="_blank"
                   class="btn btn-primary btn-sm"
                 >
@@ -526,9 +570,9 @@
               <div
                 class="d-flex justify-content-between align-items-center mb-2"
               >
-                <span>Alvaro Joseph Fernandez Flores</span>
+                <span>Jordan Velasquez Alejo</span>
                 <a
-                  href="https://www.linkedin.com/in/michaeljohnson"
+                  href="https://pe.linkedin.com/in/jordan-rodrigo-velasquez-alejo-960116329"
                   target="_blank"
                   class="btn btn-primary btn-sm"
                 >
@@ -539,9 +583,9 @@
               <div
                 class="d-flex justify-content-between align-items-center mb-2"
               >
-                <span>Alvaro Joseph Fernandez Flores</span>
+                <span>Gersson Ortiz Riveros</span>
                 <a
-                  href="https://www.linkedin.com/in/emilydavis"
+                  href="https://www.linkedin.com/in/gersson-franco-ortiz-riveros-23a429239"
                   target="_blank"
                   class="btn btn-primary btn-sm"
                 >
@@ -552,9 +596,9 @@
               <div
                 class="d-flex justify-content-between align-items-center mb-2"
               >
-                <span>Alvaro Joseph Fernandez Flores</span>
+                <span>Alejandra Quispe Salas</span>
                 <a
-                  href="https://www.linkedin.com/in/emilydavis"
+                  href="https://pe.linkedin.com/in/alejandra-quispe-salas-842757290"
                   target="_blank"
                   class="btn btn-primary btn-sm"
                 >

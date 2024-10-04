@@ -691,9 +691,10 @@ ul {
 }
 
 .column-scroll-content-title {
+  width: 1000px;
   text-transform: uppercase;
   font-size: 8vw;
-  font-weight: 500;
+  font-weight: 1000;
   line-height: 0.95;
 }
 
@@ -707,8 +708,20 @@ ul {
 .column-scroll-content-text {
   text-transform: uppercase;
   font-size: 1.25rem;
-  line-height: 1.2;
+  line-height: 1.5; /* Separación entre líneas */
+  color: white; /* Texto blanco */
+  padding: 20px; /* Espaciado interno */
+  border-radius: 50px; /* Bordes redondeados */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra de texto */
+  
+  /* Fondo degradado celeste */
+  background-color: rgba(1, 15, 10, 0.641);
+  
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.7); /* Sombra externa */
 }
+
+
+
 
 .header-button {
   border: 1px solid var(--color--accent-color);
@@ -887,7 +900,7 @@ ul {
   }
 
   .column-scroll-content-title {
-    font-size: 15vw;
+    font-size: 12vw;
   }
 
   .header-inner {
@@ -984,3 +997,26 @@ ul {
   font-style: normal;
   font-display: swap;
 } 
+
+#btnRepeat{
+  background-color: #000; /* Color de fondo negro */
+    color: #fff; /* Texto blanco */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño de fuente */
+    font-weight: bold; /* Negrita */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s, transform 0.2s; /* Efecto de transición */
+}
+
+/* Efecto al pasar el ratón por encima */
+#btnPlay:hover {
+  background-color: #444; /* Color de fondo gris oscuro */
+  transform: scale(1.05); /* Aumenta un poco el tamaño del botón */
+}
+
+/* Efecto al hacer clic */
+#btnPlay:active {
+  transform: scale(0.95); /* Reduce un poco el tamaño al hacer clic */
+}

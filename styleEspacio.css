@@ -2066,9 +2066,18 @@ html {
     --space-pill-blue: #0c1524;
   }
   
+  /* Modificando el texto de los titulos */
+  .black-h4 {
+    color: rgb(20, 48, 2); /* Color del texto */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Sombra con desplazamiento y difuminado */
+}
+.black-h3 {
+  color: rgb(0, 0, 0); /* Color del texto */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Sombra con desplazamiento y difuminado */
+}
   body {
     color: #333;
-    /* background-image: url("https://d3e54v103j8qbb.cloudfront.net/img/background-image.svg"); */
+    background-image: url("img/fondo5.jpg"); /*Modificando fondo de la pg*/
     background-position: 50% 0;
     background-repeat: repeat-y;
     background-size: 100%;
