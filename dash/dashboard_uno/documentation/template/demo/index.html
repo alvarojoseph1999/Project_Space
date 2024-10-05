@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Material Dash</title>
+  <title>AGRONEXUS</title>
   <!-- plugins:css -->
   <link rel="stylesheet" href="../assets/vendors/mdi/css/materialdesignicons.min.css">
   <link rel="stylesheet" href="../assets/vendors/css/vendor.bundle.base.css">
@@ -17,7 +17,14 @@
   <link rel="stylesheet" href="../assets/css/demo/style.css">
   <!-- End layout styles -->
   <link rel="shortcut icon" href="../assets/images/favicon.png" />
+
+    
 </head>
+<link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.4.5/css/materialdesignicons.min.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet.heat/dist/leaflet-heat.js"></script>
+    
 <body>
 <script src="../assets/js/preloader.js"></script>
   <div class="body-wrapper">
@@ -30,8 +37,8 @@
       </div>
       <div class="mdc-drawer__content">
         <div class="user-info">
-          <p class="name">Clyde Miles</p>
-          <p class="email">clydemiles@elenor.us</p>
+          <p class="name">Sofia</p>
+          <p class="email">sofia@gmail.com</p>
         </div>
         <div class="mdc-list-group">
           <nav class="mdc-list mdc-drawer-menu">
@@ -139,22 +146,7 @@
           <span class="divider"></span>
           <a href="javascript:;">Logout</a>
         </div>
-        <div class="mdc-card premium-card">
-          <div class="d-flex align-items-center">
-            <div class="mdc-card icon-card box-shadow-0">
-              <i class="mdi mdi-shield-outline"></i>
-            </div>
-            <div>
-              <p class="mt-0 mb-1 ml-2 font-weight-bold tx-12">Material Dash</p>
-              <p class="mt-0 mb-0 ml-2 tx-10">Pro available</p>
-            </div>
-          </div>
-          <p class="tx-8 mt-3 mb-1">More elements. More Pages.</p>
-          <p class="tx-8 mb-3">Starting from $25.</p>
-          <a href="https://www.bootstrapdash.com/product/material-design-admin-template/" target="_blank">
-						<span class="mdc-button mdc-button--raised mdc-button--white">Upgrade to Pro</span>
-					</a>
-        </div>
+        
       </div>
     </aside>
     <!-- partial -->
@@ -164,7 +156,7 @@
         <div class="mdc-top-app-bar__row">
           <div class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
             <button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button sidebar-toggler">menu</button>
-            <span class="mdc-top-app-bar__title">Greetings Clyde!</span>
+            <span class="mdc-top-app-bar__title">Welcome AGRONEXUS!</span>
             <div class="mdc-text-field mdc-text-field--outlined mdc-text-field--with-leading-icon search-text-field d-none d-md-flex">
               <i class="material-icons mdc-text-field__icon">search</i>
               <input class="mdc-text-field__input" id="text-field-hero-input">
@@ -184,7 +176,7 @@
                   <span class="figure">
                     <img src="../assets/images/faces/face1.jpg" alt="user" class="user">
                   </span>
-                  <span class="user-name">Clyde Miles</span>
+                  <span class="user-name">Sofia</span>
                 </span>
               </button>
               <div class="mdc-menu mdc-menu-surface" tabindex="-1">
@@ -237,89 +229,44 @@
             <div class="menu-button-container">
               <button class="mdc-button mdc-menu-button">
                 <i class="mdi mdi-bell"></i>
+                <span class="count-indicator">
+                  <span class="count">3</span>
+                </span>
               </button>
               <div class="mdc-menu mdc-menu-surface" tabindex="-1">
                 <h6 class="title"> <i class="mdi mdi-bell-outline mr-2 tx-16"></i> Notifications</h6>
                 <ul class="mdc-list" role="menu" aria-hidden="true" aria-orientation="vertical">
                   <li class="mdc-list-item" role="menuitem">
                     <div class="item-thumbnail item-thumbnail-icon">
-                      <i class="mdi mdi-email-outline"></i>
-                    </div>
+                      <i class="mdi mdi-alert-circle" style="color: red; font-size: 24px;"></i> <!-- Ícono de alerta con círculo -->
+                    </div>                    
                     <div class="item-content d-flex align-items-start flex-column justify-content-center">
-                      <h6 class="item-subject font-weight-normal">You received a new message</h6>
-                      <small class="text-muted"> 6 min ago </small>
+                      <h6 class="item-subject font-weight-normal">Prolonged period of drought </h6>
+                      <small class="text-muted"> 3 hr </small>
                     </div>
                   </li>
                   <li class="mdc-list-item" role="menuitem">
                     <div class="item-thumbnail item-thumbnail-icon">
-                      <i class="mdi mdi-account-outline"></i>                      
+                      <i class="mdi mdi-alert-circle" style="color: rgb(255, 149, 0); font-size: 24px;"></i> <!-- Ícono de alerta con círculo -->
                     </div>
                     <div class="item-content d-flex align-items-start flex-column justify-content-center">
-                      <h6 class="item-subject font-weight-normal">New user registered</h6>
+                      <h6 class="item-subject font-weight-normal">High humidity expected</h6>
                       <small class="text-muted"> 15 min ago </small>
                     </div>
                   </li>
                   <li class="mdc-list-item" role="menuitem">
                     <div class="item-thumbnail item-thumbnail-icon">
-                      <i class="mdi mdi-alert-circle-outline"></i>
+                      <i class="mdi mdi-alert-circle" style="color: rgb(255, 234, 0); font-size: 24px;"></i> <!-- Ícono de alerta con círculo -->
                     </div>
                     <div class="item-content d-flex align-items-start flex-column justify-content-center">
-                      <h6 class="item-subject font-weight-normal">System Alert</h6>
+                      <h6 class="item-subject font-weight-normal">More abundant rainfall forecast</h6>
                       <small class="text-muted"> 2 days ago </small>
                     </div>
-                  </li> 
-                  <li class="mdc-list-item" role="menuitem">
-                    <div class="item-thumbnail item-thumbnail-icon">
-                      <i class="mdi mdi-update"></i>
-                    </div>
-                    <div class="item-content d-flex align-items-start flex-column justify-content-center">
-                      <h6 class="item-subject font-weight-normal">You have a new update</h6>
-                      <small class="text-muted"> 3 days ago </small>
-                    </div>
-                  </li> 
+                  </li>  
                 </ul>
               </div>
             </div>
-            <div class="menu-button-container">
-              <button class="mdc-button mdc-menu-button">
-                <i class="mdi mdi-email"></i>
-                <span class="count-indicator">
-                  <span class="count">3</span>
-                </span>
-              </button>
-              <div class="mdc-menu mdc-menu-surface" tabindex="-1">
-                <h6 class="title"><i class="mdi mdi-email-outline mr-2 tx-16"></i> Messages</h6>
-                <ul class="mdc-list" role="menu" aria-hidden="true" aria-orientation="vertical">
-                  <li class="mdc-list-item" role="menuitem">
-                    <div class="item-thumbnail">
-                      <img src="../assets/images/faces/face4.jpg" alt="user">
-                    </div>
-                    <div class="item-content d-flex align-items-start flex-column justify-content-center">
-                      <h6 class="item-subject font-weight-normal">Mark send you a message</h6>
-                      <small class="text-muted"> 1 Minutes ago </small>
-                    </div>
-                  </li>
-                  <li class="mdc-list-item" role="menuitem">
-                    <div class="item-thumbnail">
-                      <img src="../assets/images/faces/face2.jpg" alt="user">
-                    </div>
-                    <div class="item-content d-flex align-items-start flex-column justify-content-center">
-                      <h6 class="item-subject font-weight-normal">Cregh send you a message</h6>
-                      <small class="text-muted"> 15 Minutes ago </small>
-                    </div>
-                  </li>
-                  <li class="mdc-list-item" role="menuitem">
-                    <div class="item-thumbnail">
-                      <img src="../assets/images/faces/face3.jpg" alt="user">
-                    </div>
-                    <div class="item-content d-flex align-items-start flex-column justify-content-center">
-                      <h6 class="item-subject font-weight-normal">Profile picture updated</h6>
-                      <small class="text-muted"> 18 Minutes ago </small>
-                    </div>
-                  </li>                
-                </ul>
-              </div>
-            </div>
+            
             <div class="menu-button-container d-none d-md-block">
               <button class="mdc-button mdc-menu-button">
                 <i class="mdi mdi-arrow-down-bold-box"></i>
@@ -356,23 +303,11 @@
               <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-3-desktop mdc-layout-grid__cell--span-4-tablet">
                 <div class="mdc-card info-card info-card--success">
                   <div class="card-inner">
-                    <h5 class="card-title">Borrowed</h5>
+                    <h5 class="card-title">Temperatura</h5>
                     <h5 class="font-weight-light pb-2 mb-1 border-bottom">$62,0076.00</h5>
                     <p class="tx-12 text-muted">48% target reached</p>
                     <div class="card-icon-wrapper">
-                      <i class="material-icons">dvr</i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-3-desktop mdc-layout-grid__cell--span-4-tablet">
-                <div class="mdc-card info-card info-card--danger">
-                  <div class="card-inner">
-                    <h5 class="card-title">Annual Profit</h5>
-                    <h5 class="font-weight-light pb-2 mb-1 border-bottom">$1,958,104.00</h5>
-                    <p class="tx-12 text-muted">55% target reached</p>
-                    <div class="card-icon-wrapper">
-                      <i class="material-icons">attach_money</i>
+                      <i class="mdi mdi-thermometer" style="color: rgb(255, 251, 0); font-size: 35px;"></i> <!-- Ícono de termómetro en rojo -->
                     </div>
                   </div>
                 </div>
@@ -380,11 +315,23 @@
               <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-3-desktop mdc-layout-grid__cell--span-4-tablet">
                 <div class="mdc-card info-card info-card--primary">
                   <div class="card-inner">
-                    <h5 class="card-title">Lead Conversion</h5>
+                    <h5 class="card-title">Humedad</h5>
+                    <h5 class="font-weight-light pb-2 mb-1 border-bottom">$1,958,104.00</h5>
+                    <p class="tx-12 text-muted">55% target reached</p>
+                    <div class="card-icon-wrapper">
+                      <i class="mdi mdi-water" style="color: rgb(0, 251, 255); font-size: 24px;"></i> <!-- Ícono de agua en rojo -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-3-desktop mdc-layout-grid__cell--span-4-tablet">
+                <div class="mdc-card info-card info-card--dark">
+                  <div class="card-inner">
+                    <h5 class="card-title">Precipitacion</h5>
                     <h5 class="font-weight-light pb-2 mb-1 border-bottom">$234,769.00</h5>
                     <p class="tx-12 text-muted">87% target reached</p>
                     <div class="card-icon-wrapper">
-                      <i class="material-icons">trending_up</i>
+                      <i class="mdi mdi-weather-rainy" style="color: rgb(0, 225, 255); font-size: 24px;"></i> <!-- Ícono de nubes con lluvia en rojo -->
                     </div>
                   </div>
                 </div>
@@ -392,11 +339,12 @@
               <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-3-desktop mdc-layout-grid__cell--span-4-tablet">
                 <div class="mdc-card info-card info-card--info">
                   <div class="card-inner">
-                    <h5 class="card-title">Average Income</h5>
+                    <h5 class="card-title">Reflectancia</h5>
                     <h5 class="font-weight-light pb-2 mb-1 border-bottom">$1,200.00</h5>
                     <p class="tx-12 text-muted">87% target reached</p>
                     <div class="card-icon-wrapper">
-                      <i class="material-icons">credit_card</i>
+                      <i class="mdi mdi-brightness-6" style="color: rgb(200, 255, 0); font-size: 24px;"></i> <!-- Ícono de brillo en rojo -->
+                    </div>
                     </div>
                   </div>
                 </div>
@@ -472,8 +420,102 @@
                         </div>
                     </div>
                     <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6 mdc-layout-grid__cell--span-8-tablet"> 
-                      <div id="revenue-map" class="revenue-world-map"></div>
-                    </div>
+                      <div id="map" class="revenue-world-map"></div> 
+                  </div>
+                  
+                  <script>
+                    // Inicializa el mapa
+                    const map = L.map('map').setView([-17.170000, -70.953861], 14);
+                
+                    // Cargar un mapa de OpenStreetMap
+                    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                        maxZoom: 19,
+                        attribution: '© OpenStreetMap'
+                    }).addTo(map);
+                
+                    // Crear un icono personalizado para WhatsApp
+                    const whatsappIcon = L.icon({
+                        iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png',
+                        iconSize: [32, 32],
+                        iconAnchor: [16, 32],
+                        popupAnchor: [0, -32]
+                    });
+                
+                    // Define las ubicaciones de los marcadores
+                    const locations = [
+                        { 
+                            lat: -17.175556, 
+                            lng: -70.963861, 
+                            info: "<a href='https://chat.whatsapp.com/J1tjJwiuaMA83vok4Gd3j3' target='_blank'>Group of farmers near you</a>" 
+                        },
+                        { lat: -37.817209, lng: 144.953736, info: "Ubicación 1: Melbourne" },
+                        { lat: -37.820000, lng: 144.950000, info: "Ubicación 2: Parque" },
+                        { lat: -37.810000, lng: 144.960000, info: "Ubicación 3: Museo" }
+                    ];
+                
+                    // Agrega marcadores con el ícono de WhatsApp y ventanas de información
+                    locations.forEach(location => {
+                        const marker = L.marker([location.lat, location.lng], { icon: whatsappIcon }).addTo(map);
+                        marker.bindPopup(location.info, { minWidth: 200 });
+                    });
+                
+                    /// Función para generar puntos en una "zona rectangular"
+                    function generateRectanglePoints(lat1, lng1, lat2, lng2, intensity) {
+                      const points = [];
+                      const stepLat = (lat2 - lat1) / 10; // Dividir en 10 pasos (ajustable)
+                      const stepLng = (lng2 - lng1) / 10; // Dividir en 10 pasos (ajustable)
+
+                      for (let lat = lat1; lat <= lat2; lat += stepLat) {
+                          for (let lng = lng1; lng <= lng2; lng += stepLng) {
+                              points.push([lat, lng, intensity]);
+                          }
+                      }
+                      return points;
+                  }
+
+                  // Generar datos de calor para áreas rectangulares (zonas grandes)
+
+                  // Moquegua - Zona roja (rectangular)
+                  const moqueguaRoja = generateRectanglePoints(-17.180000, -70.950000, -17.170000, -70.940000, 0.5);
+                  
+                  // Moquegua - Zona amarilla (rectangular)
+                  const moqueguaAmarilla = generateRectanglePoints(-17.190000, -70.960000, -17.180000, -70.950000, 0.5);
+                  
+                  // Arequipa - Zona roja (rectangular)
+                  const arequipaRoja = generateRectanglePoints(-16.420000, -71.540000, -16.410000, -71.530000, 0.5);
+
+                  // Arequipa - Zona amarilla (rectangular)
+                  const arequipaAmarilla = generateRectanglePoints(-16.430000, -71.550000, -16.420000, -71.540000, 0.5);
+
+                  // Cusco - Zona roja (rectangular)
+                  const cuscoRoja = generateRectanglePoints(-13.520000, -71.985000, -13.510000, -71.975000, 1);
+
+                  // Cusco - Zona amarilla (rectangular)
+                  const cuscoAmarilla = generateRectanglePoints(-13.530000, -71.995000, -13.520000, -71.985000, 1);
+
+                  // Unir todos los puntos
+                  const heatData = [
+                      ...moqueguaRoja,
+                      ...moqueguaAmarilla,
+                      ...arequipaRoja,
+                      ...arequipaAmarilla,
+                      ...cuscoRoja,
+                      ...cuscoAmarilla
+                  ];
+
+                  // Crear el mapa de calor
+                  const heatLayer = L.heatLayer(heatData, {
+                      radius: 30,  // Ajusta el radio según lo necesario
+                      blur: 5,
+                      maxZoom: 12,
+                      gradient: {
+                          0.5: 'rgb(255, 255, 0)',     // Amarillo para puntos con intensidad 0.5
+                          1.0: 'rgb(255, 0, 0)'        // Rojo para puntos con intensidad 1
+                      }
+                  }).addTo(map);
+                </script>
+                
+
                   </div>
                 </div> 
               </div>
