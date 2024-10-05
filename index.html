@@ -30,6 +30,22 @@
     <link rel="stylesheet" href="styleEspacio.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="stylePersonal.css" />
+    <style>
+      /* Estilos para el spinner de carga */
+      #loadingSpinner {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+
+        display: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -37,16 +53,22 @@
         <video id="miVideo" plays-inline>
           <source src="video_agro.mp4" type="video/mp4" />
         </video>
-
+        <div id="loadingSpinner">
+          <div class="spinner-grow" role="status">
+            <span class="sr-only"></span>
+          </div>
+        </div>
         <!-- Navegador -->
         <div class="navbar" id="navbar">
-          <img class="logo" src="img/nasa.png" />
+          <img class="logo" src="img/LogoTeam.webp" />
           <ul class="links" id="navLinks">
             <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Prediccion</a></li>
+            <li><a href="#">Welcome</a></li>
+            <li><a href="#">Section</a></li>
             <li><a href="#">Contact</a></li>
-            <li><a href="login.html">Login</a></li>
+            <li>
+              <a href="javascript:void(0);" onclick="irALogin()">Login</a>
+            </li>
           </ul>
           <div class="toggle_btn" id="toggleBtn">
             <i class="fa-solid fa-bars"></i>
@@ -54,8 +76,8 @@
         </div>
         <div class="dropdown_menu" id="dropdownMenu">
           <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Prediccion</a></li>
+          <li><a href="#">Welcome</a></li>
+          <li><a href="#">Section</a></li>
           <li><a href="#">Contact</a></li>
           <li><a href="#" class="action_btn">Get Started </a></li>
         </div>
@@ -72,6 +94,7 @@
         <div
           data-w-id="cdef4909-a5e5-a23b-2b8b-e7be39f696a1"
           class="column-scroll-wrapper"
+          id="Welcome"
         >
           <div class="column-scroll-sticky">
             <div class="column-scroll-sticky-inner">
@@ -225,8 +248,8 @@
               class="profile-pic"
             />
             <div class="review-text">
-              <h3>ALFF!</h3>
-              <p>"ME GUSTA LA PROGRAMACION EHHHHH"</p>
+              <h3>Noticia de agricultura</h3>
+              <p>Como afecta la sequia a la agricultura</p>
             </div>
           </div>
 
@@ -242,8 +265,8 @@
               class="profile-pic"
             />
             <div class="review-text">
-              <h3>ALFF!</h3>
-              <p>"ME GUSTA LA PROGRAMACION EHHHHH"</p>
+              <h3>Noticia de agricultura</h3>
+              <p>Como afecta la sequia a la agricultura</p>
             </div>
           </div>
 
@@ -259,11 +282,11 @@
               class="profile-pic"
             />
             <div class="review-text">
-              <h3>ALFF!</h3>
-              <p>"ME GUSTA LA PROGRAMACION EHHHHH"</p>
+              <h3>Noticia de agricultura</h3>
+              <p>Como afecta la sequia a la agricultura</p>
             </div>
           </div>
-          <div
+          <!-- <div
             class="review-card"
             data-aos="zoom-in-down"
             data-aos-duration="1500"
@@ -275,12 +298,12 @@
               class="profile-pic"
             />
             <div class="review-text">
-              <h3>Went Solo, Still Fun</h3>
-              <p>Rey Kenobi</p>
+              <h3>Noticia de agricultura</h3>
+              <p>Como afecta la sequia a la agricultura</p>
             </div>
-          </div>
+          </div> -->
 
-          <div
+          <!-- <div
             class="review-card"
             data-aos="zoom-in-down"
             data-aos-duration="1500"
@@ -292,16 +315,15 @@
               class="profile-pic"
             />
             <div class="review-text">
-              <!-- <div class="stars">★★★★★</div> -->
-              <h3>My Room Had a Lot of Space</h3>
-              <p>Neil deGrasse Tyson</p>
+              <h3>Noticia de agricultura</h3>
+              <p>Como afecta la sequia a la agricultura</p>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
 
-    <!-- SLIDER SPACE NO MOVER -->
+    <!-- SLIDER SPACE NO MOVER
     <div>
       <div id="about" class="why-go-with-spaced">
         <div class="orange-divider-cenetred">
@@ -370,7 +392,7 @@
                     </div>
                   </div>
                 </div>
-                <!-- RIGHT ARROW PROBLEM -->
+                 RIGHT ARROW PROBLEM 
                 <div class="arrow left w-slider-arrow-left">
                   <div class="w-icon-slider-left"></div>
                 </div>
@@ -381,7 +403,7 @@
               </div>
             </div>
 
-            <!-- ANIMACION 3 IMAGENES -->
+             ANIMACION 3 IMAGENES 
             <div class="column-3 w-col w-col-6 w-col-stack">
               <div
                 class="activity-pill centered"
@@ -445,143 +467,120 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <!-- FOOTER -->
     <footer
-      style="
-        padding: 40px 0;
-        background-image: url('img/foter.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
-        margin-top: 20px;
-        padding-top: 520px;
-      "
-    >
-      <div class="container">
-        <div
-          class="row text-center text-md-left justify-content-between align-items-center"
-        >
-          <!-- Logo and About Section -->
-          <div class="col-md-4 mb-4" style="margin-top: -700px">
-            <img src="img/nasa.png" alt="AgriFlow Logo" style="width: 150px" />
-            <h3>Hello, We Are AgriFlow</h3>
-            <p>
-              Independent freelancer was nothing short of extraordinary. His
-              expertise in branding.
-            </p>
-            <div class="social-icons">
-              <a href="#"><i class="fab fa-facebook"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-              <a href="#"><i class="fab fa-pinterest"></i></a>
-              <a href="#"><i class="fab fa-linkedin"></i></a>
-            </div>
+  style="
+    padding: 40px 0;
+    background-image: url('img/foter.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-top: 20px;
+  "
+>
+  <div class="container">
+    <div class="row text-center text-md-left justify-content-between align-items-start">
+      <!-- Logo and About Section -->
+      <div class="col-md-4 mb-4">
+        <img src="img/LogoTeam.webp" alt="AgriFlow Logo" style="width: 150px;border-radius: 15px;" />
+        <h3>Hello, We Are AgriFlow</h3>
+        <p>
+          Independent freelancer was nothing short of extraordinary. His expertise in branding.
+        </p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-pinterest"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+      <!-- Explore Section -->
+      <div class="col-md-2 mb-4">
+        <h4 class="mb-3" style="letter-spacing: 2px; color: #818963">
+          INDICE
+        </h4>
+        <ul class="list-unstyled mb-0 text-dark">
+          <li class="mb-1">
+            <a href="#!">HOME</a>
+          </li>
+          <li class="mb-1">
+            <a href="#!">ABOUT</a>
+          </li>
+          <li class="mb-1">
+            <a href="#!">PREDICCION</a>
+          </li>
+          <li>
+            <a href="#!">CONTACT</a>
+          </li>
+          <li>
+            <a href="#!">LOGIN</a>
+          </li>
+        </ul>
+      </div>
+      <!-- Contact Info Section -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <h4 class="mb-1" style="letter-spacing: 2px; color: #818963">
+          Team Members
+        </h4>
+        <div class="list-group text-black">
+          <!-- Member 1 -->
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <span>Sofia Quispe Salas</span>
+            <a href="https://pe.linkedin.com/in/sofia-quispe-salas" target="_blank" class="btn btn-primary btn-sm">
+              LinkedIn
+            </a>
           </div>
-          <!-- Explore Section -->
-          <div class="col-md-2 mb-4" style="margin-top: -700px">
-            <h4 class="mb-3" style="letter-spacing: 2px; color: #818963">
-              INDICE
-            </h4>
-            <ul class="list-unstyled mb-0 text-dark">
-              <li class="mb-1">
-                <a href="#!">HOME</a>
-              </li>
-              <li class="mb-1">
-                <a href="#!">ABOUT</a>
-              </li>
-              <li class="mb-1">
-                <a href="#!">PREDICCION</a>
-              </li>
-              <li>
-                <a href="#!">CONTACT</a>
-              </li>
-              <li>
-                <a href="#!">LOGIN</a>
-              </li>
-            </ul>
+          <!-- Member 2 -->
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <span>Alvaro Fernandez Flores</span>
+            <a href="https://pe.linkedin.com/in/alvaro-fernandez-flores" target="_blank" class="btn btn-primary btn-sm">
+              LinkedIn
+            </a>
           </div>
-          <!-- Contact Info Section -->
-          <div class="col-lg-3 col-md-6 mb-4" style="margin-top: -700px">
-            <h4 class="mb-1" style="letter-spacing: 2px; color: #818963">
-              Team Members
-            </h4>
-            <div class="list-group text-black">
-              <!-- Miembro 1 -->
-              <div
-                class="d-flex justify-content-between align-items-center mb-2"
-              >
-                <span>Sofia Quispe Salas</span>
-                <a
-                  href="https://pe.linkedin.com/in/sofia-quispe-salas"
-                  target="_blank"
-                  class="btn btn-primary btn-sm"
-                >
-                  LinkedIn
-                </a>
-              </div>
-              <!-- Miembro 2 -->
-              <div
-                class="d-flex justify-content-between align-items-center mb-2"
-              >
-                <span>Alvaro Fernandez Flores</span>
-                <a
-                  href="https://pe.linkedin.com/in/alvaro-fernandez-flores"
-                  target="_blank"
-                  class="btn btn-primary btn-sm"
-                >
-                  LinkedIn
-                </a>
-              </div>
-              <!-- Miembro 3 -->
-              <div
-                class="d-flex justify-content-between align-items-center mb-2"
-              >
-                <span>Jordan Velasquez Alejo</span>
-                <a
-                  href="https://pe.linkedin.com/in/jordan-rodrigo-velasquez-alejo-960116329"
-                  target="_blank"
-                  class="btn btn-primary btn-sm"
-                >
-                  LinkedIn
-                </a>
-              </div>
-              <!-- Miembro 4 -->
-              <div
-                class="d-flex justify-content-between align-items-center mb-2"
-              >
-                <span>Gersson Ortiz Riveros</span>
-                <a
-                  href="https://www.linkedin.com/in/gersson-franco-ortiz-riveros-23a429239"
-                  target="_blank"
-                  class="btn btn-primary btn-sm"
-                >
-                  LinkedIn
-                </a>
-              </div>
-              <!-- Miembro 5 -->
-              <div
-                class="d-flex justify-content-between align-items-center mb-2"
-              >
-                <span>Alejandra Quispe Salas</span>
-                <a
-                  href="https://pe.linkedin.com/in/alejandra-quispe-salas-842757290"
-                  target="_blank"
-                  class="btn btn-primary btn-sm"
-                >
-                  LinkedIn
-                </a>
-              </div>
-            </div>
+          <!-- Member 3 -->
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <span>Jordan Velasquez Alejo</span>
+            <a href="https://pe.linkedin.com/in/jordan-rodrigo-velasquez-alejo-960116329" target="_blank" class="btn btn-primary btn-sm">
+              LinkedIn
+            </a>
+          </div>
+          <!-- Member 4 -->
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <span>Gersson Ortiz Riveros</span>
+            <a href="https://www.linkedin.com/in/gersson-franco-ortiz-riveros-23a429239" target="_blank" class="btn btn-primary btn-sm">
+              LinkedIn
+            </a>
+          </div>
+          <!-- Member 5 -->
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <span>Alejandra Quispe Salas</span>
+            <a href="https://pe.linkedin.com/in/alejandra-quispe-salas-842757290" target="_blank" class="btn btn-primary btn-sm">
+              LinkedIn
+            </a>
           </div>
         </div>
       </div>
-      <!-- <div class="footer-background-image">
-    <div class="overlay-content text-center py-3">
-      <p class="text-white mb-0">Copyright © AgriFlow | Designed by VictorFlow - Powered by Webflow</p>
     </div>
-  </div> -->
-    </footer>
+  </div>
+  <div class="text-center py-3" style="color: rgb(255, 255, 255); background: rgba(85, 84, 84, 0.397); ">
+    <p class="mb-0" style="color: rgb(252, 244, 244);">Copyright © AgroNexus | Designed by AgroNexus </p>
+  </div>
+</footer>
+
+
+    <script>
+      function irALogin() {
+        // Mostrar el spinner
+        document.getElementById("loadingSpinner").style.display = "flex";
+
+        // Redirigir después de 1 segundo (1000 ms)
+        setTimeout(function () {
+          window.location.href = "login.html"; // Cambia esto por la ruta a tu página de login
+        }, 3000);
+      }
+    </script>
     <script>
       const video = document.getElementById("miVideo");
       const btnPlay = document.getElementById("btnRepeat");

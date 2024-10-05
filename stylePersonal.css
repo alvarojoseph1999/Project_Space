@@ -173,7 +173,7 @@
   padding: 5px;
   align-items: center;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  height: 90px; /* Ajusta la altura para hacerlas más compactas */
+  height: 150px; /* Ajusta la altura para hacerlas más compactas */
   width: 380px;
 }
 
@@ -311,8 +311,16 @@ footer ul li a:hover {
   margin-left: 250px;
 
 }
+.container-medium {
+  display: flex;
+  justify-content: center;
+  margin-left: 50%;
+  margin-bottom: -150px;
+}
 
-
+.video-preview-wrapper {
+  text-align: center;
+}
 
 
 
