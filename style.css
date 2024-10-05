@@ -243,14 +243,17 @@ display: none;
   position: absolute;
   right: 0;
   bottom: 0;
+  top: 0px;
   z-index: -1;
 }
 
 .content {
   width: 100%;
   position: absolute;
-  color: white;
+  color: rgb(0, 0, 0);
   top: 45%;
+  
+  padding-left: 60%;
   transform: translateY(-50%);
   text-align: center;
 
@@ -261,6 +264,9 @@ display: none;
   justify-content: center;
   text-align: center;
   color: #fff;*/
+}
+.content button{
+  margin-top: 20px;
 }
 .content h1 {
   margin-top: 80px;

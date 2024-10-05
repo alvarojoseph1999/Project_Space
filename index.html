@@ -37,72 +37,34 @@
         <video id="miVideo" plays-inline>
           <source src="video_agro.mp4" type="video/mp4" />
         </video>
-        <button id="btnRepeat">Activar Audio</button>
-        
-        <script>
-          const video = document.getElementById('miVideo');
-          const btnPlay = document.getElementById('btnRepeat');
-  
-          // Asegúrate de que el volumen esté al máximo
-          video.volume = 1.0;
-  
-          // Evento para reproducir el video al hacer clic en el botón
-          btnPlay.addEventListener('click', () => {
-              if (video.paused) { // Solo reproduce si el video está en pausa
-                  video.play(); // Reproduce el video
-                  btnPlay.style.display = 'none'; // Oculta el botón al reproducir
-              }
-          });
-  
-          // Cuando el video termine, se detiene y se restablece el tiempo
-        video.addEventListener('ended', () => {
-          video.pause(); // Detiene el video
-          video.currentTime = 0; // Reinicia el video a 0
-          btnPlay.style.display = 'block'; // Muestra el botón de reproducir nuevamente
-      });
-
-      // Asegúrate de que no se pueda reproducir nuevamente sin reiniciar el video
-      video.addEventListener('play', () => {
-          btnPlay.disabled = true; // Desactiva el botón mientras se reproduce
-      });
-
-      video.addEventListener('pause', () => {
-          btnPlay.disabled = false; // Activa el botón cuando está en pausa
-      });
-
-
-      </script>
 
         <!-- Navegador -->
-        <div class="navbar">
+        <div class="navbar" id="navbar">
           <img class="logo" src="img/nasa.png" />
-          <ul class="links">
+          <ul class="links" id="navLinks">
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Prediccion</a></li>
             <li><a href="#">Contact</a></li>
             <li><a href="login.html">Login</a></li>
           </ul>
-          <!-- <a href="#" class="action_btn">Get Started </a> -->
-          <div class="toggle_btn">
+          <div class="toggle_btn" id="toggleBtn">
             <i class="fa-solid fa-bars"></i>
           </div>
         </div>
-        <div class="dropdown_menu">
+        <div class="dropdown_menu" id="dropdownMenu">
           <li><a href="#">Home</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Prediccion</a></li>
           <li><a href="#">Contact</a></li>
           <li><a href="#" class="action_btn">Get Started </a></li>
         </div>
-
-        <!-- AGREGANDO BOTON DE REPETICION DE VIDEO -->
       </div>
     </header>
 
-    <div class="content" >
+    <div class="content">
       <h1>AGRONEXUS</h1>
-    
+      <button id="btnRepeat">Activar Audio</button>
     </div>
 
     <div class="main-wrapper">
@@ -144,19 +106,24 @@
           <div class="page-padding">
             <div class="column-scroll-content">
               <div class="overflow-hidden">
-                <div class="column-scroll-content-title is-1">WELCOME TO</div>
+                <div class="column-scroll-content-title is-2">WELCOME TO</div>
               </div>
               <div class="overflow-hidden">
                 <div class="column-scroll-content-title is-2">AGRONEXUS</div>
               </div>
               <div class="column-scroll-content-copy">
                 <p class="column-scroll-content-text">
-                  Welcome to the Agricultural Management System, where you can access the latest news about the industry,
-                  the impact of climate change, innovative farming techniques, and much more. Our goal is to help you make 
-                  informed decisions to improve your field’s productivity and promote sustainable agricultural practices. 
-                  <br><br>
-                  <b>!Explore the tools and resources available to optimize your production!</b>
-                  
+                  Welcome to the Agricultural Management System, where you can
+                  access the latest news about the industry, the impact of
+                  climate change, innovative farming techniques, and much more.
+                  Our goal is to help you make informed decisions to improve
+                  your field’s productivity and promote sustainable agricultural
+                  practices.
+                  <br /><br />
+                  <b
+                    >!Explore the tools and resources available to optimize your
+                    production!</b
+                  >
                 </p>
 
                 <div class="spacer-sm-end"></div>
@@ -202,7 +169,7 @@
     <center><h2 class="black-h4">NEWS SECTION</h2></center>
 
     <!-- PRUEBA 1 -->
-    <div class="containerBody" style="margin-top: 0px; padding-top: 0px;">
+    <div class="containerBody" style="margin-top: 0px; padding-top: 0px">
       <div class="container">
         <!-- <div class="image-content"> -->
         <div class="sliderCenter">
@@ -615,6 +582,39 @@
     </div>
   </div> -->
     </footer>
+    <script>
+      const video = document.getElementById("miVideo");
+      const btnPlay = document.getElementById("btnRepeat");
+
+      // Asegúrate de que el volumen esté al máximo
+      video.volume = 1.0;
+
+      // Evento para reproducir el video al hacer clic en el botón
+      btnPlay.addEventListener("click", () => {
+        if (video.paused) {
+          // Solo reproduce si el video está en pausa
+          video.play(); // Reproduce el video
+          btnPlay.style.display = "none"; // Oculta el botón al reproducir
+        }
+      });
+
+      // Cuando el video termine, se detiene y se restablece el tiempo
+      video.addEventListener("ended", () => {
+        video.pause(); // Detiene el video
+        video.currentTime = 0; // Reinicia el video a 0
+        btnPlay.style.display = "block"; // Muestra el botón de reproducir nuevamente
+      });
+
+      // Asegúrate de que no se pueda reproducir nuevamente sin reiniciar el video
+      video.addEventListener("play", () => {
+        btnPlay.disabled = true; // Desactiva el botón mientras se reproduce
+      });
+
+      video.addEventListener("pause", () => {
+        btnPlay.disabled = false; // Activa el botón cuando está en pausa
+      });
+    </script>
+    <!-- FIN DE AUDIO VIDEO -->
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

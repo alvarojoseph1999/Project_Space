@@ -271,6 +271,50 @@ footer ul li a {
 footer ul li a:hover {
   color: #76b852;
 }
+/* TEXTO */
+/* Controlar el tamaño de la fuente en los elementos con la clase column-scroll-content-title */
+.column-scroll-content-title {
+  font-size: 48px; /* Cambia este valor según el tamaño que desees */
+  font-weight: bold; /* Si quieres que sea en negrita */
+  color: #ffffff; /* Cambia el color si es necesario */
+}
+
+/* Si quieres que solo cambie el tamaño de la fuente en los elementos con clase is-2 */
+.column-scroll-content-title.is-2 {
+  font-size: 80px; /* Cambia este valor según el tamaño que desees */
+  text-transform: uppercase; /* Para poner el texto en mayúsculas si es necesario */
+  font-family: 'Arial', sans-serif; /* Cambia la familia de la fuente si es necesario */
+  padding-left: 130px;
+  margin-top: 0px;
+}
+
+.column-scroll-content-text {
+  font-size: 20px; /* Cambia este valor según el tamaño deseado */
+  line-height: 1.5; /* Mejora la legibilidad al ajustar la altura de línea */
+  color: #ffffff; /* Color del texto */
+  width: 800px;
+  text-align: justify;
+}
+
+.column-scroll-content-text b {
+  font-size: 20px; /* Tamaño de fuente más grande para el texto en negrita */
+  color: #ffffff; /* Color del texto en negrita (opcional) */
+}
+
+.button {
+  font-size: 18px; /* Tamaño de la fuente del botón */
+  padding: 10px 20px; /* Espaciado interno del botón */
+  border-radius: 35px; /* Bordes redondeados del botón */
+  background-color: #2c2e33; /* Color de fondo del botón */
+  color: #fff; /* Color del texto del botón */
+  text-decoration: none; /* Sin subrayado en el texto del botón */
+  margin-left: 250px;
+
+}
+
+
+
+
 
 /* Footer background image section */
 /* .footer-background-image {
