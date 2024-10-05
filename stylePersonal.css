@@ -352,3 +352,159 @@ footer ul li a:hover {
   color: #fff;
   margin: 0;
 } */
+
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+  .navbar .links {
+    display: none;
+  }
+
+  .toggle_btn {
+    display: block;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .dropdown_menu {
+    position: absolute;
+    top: 70px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .dropdown_menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  .logo {
+    width: 60px;
+  }
+
+  .content h1 {
+    font-size: 32px;
+    margin-top: -50px;
+    color: #2c2e33;
+  }
+
+  .content button {
+    font-size: 16px;
+    padding: 8px 16px;
+    margin-top: -110px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .logo {
+    width: 60px;
+  }
+
+  .content h1 {
+    font-size: 24px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+}
+
+/* General styles */
+.column-scroll-content-wrapper {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.page-padding {
+  padding: 40px;
+}
+
+.column-scroll-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.column-scroll-content-title {
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.column-scroll-content-copy {
+  max-width: 800px;
+  text-align: center;
+}
+
+.column-scroll-content-text {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.button {
+  background-color: green;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 18px;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.button:hover {
+  background-color: darkgreen;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+  .page-padding {
+    padding: 20px;
+  }
+
+  .column-scroll-content-title {
+    font-size: 50px !important;
+    padding-right: 50% !important;
+    color: #2c2e33;
+  }
+
+  .column-scroll-content-text {
+    font-size: 16px;
+    margin-left: -90px !important;
+    padding-right: 180px;
+    border-radius: 60px !important;
+  }
+
+  .button {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .page-padding {
+    padding: 15px;
+  }
+
+  .column-scroll-content-title {
+    font-size: 28px;
+  }
+
+  .column-scroll-content-text {
+    font-size: 14px;
+  }
+
+  .button {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+}
