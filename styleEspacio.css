@@ -2075,13 +2075,13 @@ html {
   color: rgb(0, 0, 0); /* Color del texto */
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Sombra con desplazamiento y difuminado */
 }
+
   body {
-    color: #333;
-    background-image: url("img/fondo5.jpg"); /*Modificando fondo de la página*/
-    background-position: center; /* Centra la imagen en la página */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    background-size: cover; /* Hace que la imagen cubra todo el fondo */
-    background-attachment: fixed; /* Mantiene la imagen fija cuando se hace scroll */
+    background-image: url("img/imgagr.jpg");
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-attachment: fixed;
     font-family: Roboto, sans-serif;
     font-size: 14px;
     line-height: 20px;

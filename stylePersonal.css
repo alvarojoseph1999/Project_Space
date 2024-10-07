@@ -508,3 +508,178 @@ footer ul li a:hover {
     padding: 6px 12px;
   }
 }
+
+
+/* Responsive styles for tablets and mobile */
+@media only screen and (max-width: 768px) {
+  .section-tutorial {
+    padding: 30px 0;
+    margin-top: -40px;
+  }
+
+  .video-preview-wrapper {
+    max-width: 600px;
+  }
+
+  .youtube-play-button {
+    width: 80px;
+    height: 80px;
+  }
+
+  .youtube-play-icon {
+    width: 40px;
+    height: 40px;
+  }
+  
+}
+
+@media only screen and (max-width: 480px) {
+  .section-tutorial {
+    padding: 20px 0;
+  }
+
+  .video-preview-wrapper {
+    max-width: 100%;
+  }
+
+  .youtube-play-button {
+    width: 60px;
+    height: 60px;
+  }
+
+  .youtube-play-icon {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/* Estilos responsivos */
+@media only screen and (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .slider {
+    max-width: 800px;
+    width: 550px;
+    height: 550px;
+    margin-left: 60px !important;
+  }
+
+  .reviews {
+    margin-top: 600px;
+    margin-left: -550px !important;
+    background-color: rebeccapurple;
+  }
+
+  .review-card {
+    margin-bottom: 20px;
+    margin-left: -510px !important;
+  }
+  .black-h4{
+    margin-top: 130px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .slider {
+    max-width: 100%;
+  }
+
+  .item img {
+    border-radius: 5px;
+  }
+
+  .imgPrev {
+    width: 20px;
+    height: 20px;
+  }
+
+  .profile-pic {
+    width: 50px;
+    height: 50px;
+  }
+
+  .review-text h3 {
+    font-size: 16px;
+  }
+
+  .review-text p {
+    font-size: 12px;
+  }
+}
+/* footer */
+
+footer {
+  padding: 40px 0;
+  background-image: url('img/foter.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-top: 20px;
+}
+
+.social-icons a {
+  margin-right: 10px;
+  color: #fff;
+}
+
+.social-icons a:hover {
+  color: #818963;
+}
+
+
+
+@media (max-width: 768px) {
+  footer {
+    background-color: rebeccapurple;
+    margin-top: 280px !important;
+  }
+  footer .row {
+    flex-direction: column;
+    text-align: center;
+  }
+  .container{
+    margin-left:60px;
+    
+  }
+  .nombres span{
+background-color: rebeccapurple;
+margin-top: 20px;
+
+  }
+  .infosection{
+    margin-bottom: 20px;
+    margin-top: 280px !important;
+    margin-left: -470px !important;
+  }
+  .col-lg-3, .col-md-6, .mb-4{
+    margin-top: 10px;
+    
+  }
+  
+
+  .social-icons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+  footer {
+    padding: 20px 0;
+  }
+
+  .col-md-4 img {
+    width: 120px;
+    margin-bottom: 15px;
+  }
+
+  .btn-sm {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+
+  .social-icons a {
+    margin-right: 5px;
+  }
+}
