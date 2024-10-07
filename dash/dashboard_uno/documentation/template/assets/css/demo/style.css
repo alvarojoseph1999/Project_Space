@@ -577,6 +577,56 @@ svg.mdc-button__icon {
   color: rgba(0, 0, 0, 0.6);
 }
 
+
+
+
+#videoContainer {
+  display: none; /* Ocultar el video inicialmente */
+  width: 50%; 
+  height: 300px; 
+  overflow: hidden; 
+  position: absolute; 
+  top: 50%; 
+  left: 100%; 
+  transform: translate(-80%, -50%); 
+  z-index: 1; 
+}
+
+video {
+  position: absolute; /* Posicionar el video dentro del contenedor */
+  top: 50%; /* Centro verticalmente */
+  left: 70%; /* Desplazar el video hacia la derecha para mostrar solo el centro */
+
+  width: auto; /* Mantener proporción del video */
+  height: 100%; /* Asegura que el video llene la altura del contenedor */
+  transform: translate(-30%, -20%); /* Desplazar el video para centrarlo */
+}
+
+
+
+#showVideoButton {
+  background-color: #99b80f; /* Color de fondo */
+  color: white; /* Color del texto */
+  font-size: 0.9em; /* Tamaño de fuente */
+  padding: 15px 30px; /* Espaciado interno */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+  cursor: pointer; /* Cambiar el cursor al pasar el ratón */
+  transition: background-color 0.3s, transform 0.3s; /* Efecto de transición */
+}
+
+#showVideoButton:hover {
+  background-color: #74b300; /* Color de fondo al pasar el ratón */
+  transform: scale(1.05); /* Aumentar ligeramente el tamaño */
+}
+
+#showVideoButton:active {
+  transform: scale(0.95); /* Disminuir el tamaño al hacer clic */
+}
+
+
+
 .mdc-card__primary-action {
   --mdc-ripple-fg-size: 0;
   --mdc-ripple-left: 0;
