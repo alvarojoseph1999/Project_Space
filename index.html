@@ -32,7 +32,10 @@
     <link rel="stylesheet" href="styleEspacio.css" />
     <link rel="stylesheet" href="style.css" />
     <!-- <link rel="stylesheet" href="stylePersonal.css" /> -->
-    
+    <style>
+      /* Estilos para el spinner de carga */
+      
+    </style>
   </head>
   <body>
     <header>
@@ -40,6 +43,7 @@
         <video id="miVideo" plays-inline>
           <source src="video_agro.mp4" type="video/mp4" />
         </video>
+        
         <!-- Navegador -->
         <div class="navbar" id="navbar">
           <img class="logo" src="img/LogoTeam.webp" />
@@ -49,7 +53,7 @@
             <li><a href="#">Section</a></li>
             <li><a href="#">Contact</a></li>
             <li>
-              <a href="javascript:void(0);" onclick="irALogin()">Login</a>
+              <a href="login.html">Login</a>
             </li>
           </ul>
           <div class="toggle_btn" id="toggleBtn">
@@ -139,12 +143,12 @@
         <div class="page-padding">
           <div class="container-medium">
             <a
-              href="https://www.youtube.com/watch?v=5cMMMNgTbWw"
+              href="https://youtu.be/6rFm85ROcJg"
               target="_blank"
               class="video-preview-wrapper w-inline-block"
             >
               <img
-                
+                src="https://cdn.prod.website-files.com/65f83352d44ce1910698e01e/65fa9ed1d1c39db4e3f5655a_3%20Spalten%20Scroll%20Animation-youtube.jpg"
                 loading="lazy"
                 alt=""
                 class="video-preview-img"
@@ -222,8 +226,8 @@
           >
             
             <div class="review-text">
-              <h3>Agriculture news</h3>
-              <p>How drought affects agriculture</p>
+              <h3>Noticia de agricultura</h3>
+              <p>Como afecta la sequia a la agricultura</p>
             </div>
           </div>
 
@@ -235,8 +239,8 @@
           >
           
             <div class="review-text">
-              <h3>Agriculture news</h3>
-              <p>How drought affects agriculture</p>
+              <h3>Noticia de agricultura</h3>
+              <p>Como afecta la sequia a la agricultura</p>
             </div>
           </div>
 
@@ -248,8 +252,8 @@
           >
             
             <div class="review-text">
-              <h3>Agriculture news</h3>
-              <p>How drought affects agriculture</p>
+              <h3>Noticia de agricultura</h3>
+              <p>Como afecta la sequia a la agricultura</p>
             </div>
           </div>
         </div>
@@ -508,17 +512,6 @@
     </div>
   </footer>
 
-    <script>
-      function irALogin() {
-        // Mostrar el spinner
-        document.getElementById("loadingSpinner").style.display = "flex";
-
-        // Redirigir después de 1 segundo (1000 ms)
-        setTimeout(function () {
-          window.location.href = "login.html"; // Cambia esto por la ruta a tu página de login
-        }, 3000);
-      }
-    </script>
     <script>
       const video = document.getElementById("miVideo");
       const btnPlay = document.getElementById("btnRepeat");
