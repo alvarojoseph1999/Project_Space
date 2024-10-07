@@ -22,8 +22,8 @@
     <!-- partial:../../partials/_sidebar.html -->
     <aside class="mdc-drawer mdc-drawer--dismissible mdc-drawer--open">
       <div class="mdc-drawer__header">
-        <a href="../../index.html" class="brand-logo">
-          <img src="../../../assets/images/logo.svg" alt="logo">
+        <a href="../../index.html" class="brand-logo" style="font-size: 25px; color: #f0f0f0;">
+          Agronexus
         </a>
       </div>
       <div class="mdc-drawer__content">
@@ -261,81 +261,13 @@
             <div class="mdc-layout-grid__inner">
               <div class="mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--span-6-desktop stretch-card">
                 <div class="mdc-card">
-                  <h6 class="card-title">Switch</h6>
-                  <div class="template-demo">
-                    <div class="mdc-switch" data-mdc-auto-init="MDCSwitch">
-                      <div class="mdc-switch__track"></div>
-                      <div class="mdc-switch__thumb-underlay">
-                        <div class="mdc-switch__thumb">
-                            <input type="checkbox" id="basic-switch" class="mdc-switch__native-control" role="switch">
-                        </div>
-                      </div>
+                  <h6 class="card-title"></h6>
+                  
+                    <div class="template-demo">
+                      <!-- Aquí se reemplazan los switches por una imagen -->
+                      <img src="../../../assets/images/palgaPapa.jpeg" alt="Descripción de la imagen" style="width: 100%; height: auto; margin: 0 auto; display: block;border-radius: 20px; ">
                     </div>
-                    <div class="mdc-switch mdc-switch--checked" data-mdc-auto-init="MDCSwitch">
-                      <div class="mdc-switch__track"></div>
-                      <div class="mdc-switch__thumb-underlay">
-                        <div class="mdc-switch__thumb">
-                            <input type="checkbox" id="basic-switch" class="mdc-switch__native-control" role="switch" checked>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="mdc-switch mdc-switch--disabled" data-mdc-auto-init="MDCSwitch">
-                      <div class="mdc-switch__track"></div>
-                      <div class="mdc-switch__thumb-underlay">
-                        <div class="mdc-switch__thumb">
-                            <input type="checkbox" id="basic-switch" class="mdc-switch__native-control" role="switch">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="mdc-switch mdc-switch--secondary" data-mdc-auto-init="MDCSwitch">
-                      <div class="mdc-switch__track"></div>
-                      <div class="mdc-switch__thumb-underlay">
-                        <div class="mdc-switch__thumb">
-                            <input type="checkbox" id="basic-switch" class="mdc-switch__native-control" role="switch" checked>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="mdc-switch mdc-switch--success" data-mdc-auto-init="MDCSwitch">
-                      <div class="mdc-switch__track"></div>
-                      <div class="mdc-switch__thumb-underlay">
-                        <div class="mdc-switch__thumb">
-                            <input type="checkbox" id="basic-switch" class="mdc-switch__native-control" role="switch" checked>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="mdc-switch mdc-switch--info" data-mdc-auto-init="MDCSwitch">
-                      <div class="mdc-switch__track"></div>
-                      <div class="mdc-switch__thumb-underlay">
-                        <div class="mdc-switch__thumb">
-                            <input type="checkbox" id="basic-switch" class="mdc-switch__native-control" role="switch" checked>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="mdc-switch mdc-switch--warning" data-mdc-auto-init="MDCSwitch">
-                      <div class="mdc-switch__track"></div>
-                      <div class="mdc-switch__thumb-underlay">
-                        <div class="mdc-switch__thumb">
-                            <input type="checkbox" id="basic-switch" class="mdc-switch__native-control" role="switch" checked>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="mdc-switch mdc-switch--light" data-mdc-auto-init="MDCSwitch">
-                      <div class="mdc-switch__track"></div>
-                      <div class="mdc-switch__thumb-underlay">
-                        <div class="mdc-switch__thumb">
-                            <input type="checkbox" id="basic-switch" class="mdc-switch__native-control" role="switch" checked>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="mdc-switch mdc-switch--dark" data-mdc-auto-init="MDCSwitch">
-                      <div class="mdc-switch__track"></div>
-                      <div class="mdc-switch__thumb-underlay">
-                        <div class="mdc-switch__thumb">
-                            <input type="checkbox" id="basic-switch" class="mdc-switch__native-control" role="switch" checked>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  
                 </div>
               </div>
               <div class="mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--span-6-desktop stretch-card">
@@ -357,8 +289,8 @@
                       .video-container {
                           position: relative;
                           width: 100%; /* O ajusta el tamaño según sea necesario */
-                          max-width: 800px; /* Ancho máximo del contenedor */
-                          height: 400px; /* Altura fija para el contenedor */
+                          max-width: 200px; /* Ancho máximo del contenedor */
+                          height: 200px; /* Altura fija para el contenedor */
                           display: flex; /* Usar flexbox para centrar el video */
                           justify-content: flex-start; /* Alinear contenido a la izquierda */
                           align-items: center; /* Centrar verticalmente */
@@ -376,6 +308,8 @@
                       canvas {
                           width: 400px; /* Tamaño cuadrado */
                           height: 400px; /* Asegurar que sea cuadrado */
+                          margin-top: 240px;
+                          margin-left: 20px;
                           border: 2px solid #007BFF;
                           border-radius: 5px;
                           display: none; /* Ocultar el canvas inicialmente */
@@ -403,20 +337,20 @@
                           color: green; /* Color del mensaje */
                       }
                   </style>
-                  <h1>Abrir Cámara</h1>
+                  <h1>Open Camera</h1>
 <div class="video-container">
     <video id="video" autoplay></video>
-    <canvas id="canvas"></canvas> <!-- Elemento canvas para capturar la imagen -->
+    <canvas id="canvas"></canvas>
 </div>
-<button id="startButton">Iniciar Cámara</button>
-<button id="captureButton">Tomar Foto</button> <!-- Botón para tomar la foto -->
+<button id="startButton" style="margin-top: 220px; margin-left: 90px;">Start Camera</button>
+<button id="captureButton">Take Photo</button> <!-- Botón para tomar la foto -->
 <button id="Alex_plaga" style="display: none;">Explication of de data</button> <!-- Botón oculto -->
 <div id="message"></div> <!-- Elemento para mostrar el mensaje -->
 
 <!-- Elemento para mostrar el video explicativo -->
-<div id="explanationVideoContainer" style="display: none; position: relative; top: -50%;">
+<div id="explanationVideoContainer" >
     <video id="explanationVideo" width="640" height="480" controls onclick="event.stopPropagation();">
-        <source src="path_to_your_explanation_video.mp4" type="video/mp4">
+        <source src="./../../../assets/images/agro_2.mp4" type="video/mp4">
         Tu navegador no soporta el elemento de video.
     </video>
 </div>
@@ -486,16 +420,17 @@
           <div class="mdc-layout-grid">
             <div class="mdc-layout-grid__inner">
               <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-6-desktop">
-                <span class="text-center text-sm-left d-block d-sm-inline-block tx-14">Copyright © <a href="https://www.bootstrapdash.com/" target="_blank">bootstrapdash.com </a>2020</span>
+                <span class="text-center text-sm-left d-block d-sm-inline-block tx-14">Copyright © <a href="https://www.bootstrapdash.com/" target="_blank">Agronexus </a>2024</span>
               </div>
               <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-6-desktop d-flex justify-content-end">
-                <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center tx-14">Free <a href="https://www.bootstrapdash.com/material-design-dashboard/" target="_blank"> material admin </a> dashboards from Bootstrapdash.com</span>
+                <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center tx-14"><a target="_blank"> Agronexus </a>
               </div>
             </div>
           </div>
         </footer>
         <!-- partial -->
       </div>
+      
     </div>
   </div>
   <!-- plugins:js -->

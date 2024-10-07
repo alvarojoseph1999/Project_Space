@@ -592,6 +592,7 @@ svg.mdc-button__icon {
   z-index: 1; 
 }
 
+
 video {
   position: absolute; /* Posicionar el video dentro del contenedor */
   top: 50%; /* Centro verticalmente */
@@ -602,6 +603,23 @@ video {
   transform: translate(-30%, -20%); /* Desplazar el video para centrarlo */
 }
 
+
+#explanationVideoContainer{
+  display: none; /* Ocultar el video inicialmente */
+  width: 50%; 
+  height: 600px;
+   
+  overflow: hidden; 
+  position: absolute; 
+  
+  transform: translate(-80%, -50%); 
+  z-index: 1; 
+  display: none; 
+  position: relative; 
+  top: -39.5%;
+  margin-top: 250px; 
+  margin-left: 270px;
+}
 
 
 #showVideoButton {
