@@ -140,11 +140,11 @@
               text.push('<div>');
               text.push('<div class="d-flex align-items-center">');
               text.push('<span class="bullet-rounded" style="border-color: ' + chart.data.datasets[1].borderColor[0] +' "></span>');
-              text.push('<p class="tx-12 text-muted mb-0 ml-2">Gross volume</p>');
+              text.push('<p class="tx-12 text-muted mb-0 ml-2">Temperature</p>');
               text.push('</div>');
               text.push('<div class="d-flex align-items-center">');
               text.push('<span class="bullet-rounded" style="border-color: ' + chart.data.datasets[0].borderColor[0] +' "></span>');
-              text.push('<p class="tx-12 text-muted mb-0 ml-2">New Cusromers</p>');
+              text.push('<p class="tx-12 text-muted mb-0 ml-2">humidity</p>');
               text.push('</div>');
               text.push('</div>');
               return text.join('');
