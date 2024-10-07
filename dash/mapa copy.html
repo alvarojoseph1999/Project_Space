@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abrir Cámara</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        video {
+            width: 100%; /* O ajusta el tamaño según sea necesario */
+            max-width: 600px;
+            border: 2px solid #007BFF;
+            border-radius: 5px;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Abrir Cámara</h1>
+    <video id="video" autoplay></video>
+    <button id="startButton">Iniciar Cámara</button>
+
+    <script>
+        const video = document.getElementById('video');
+        const startButton = document.getElementById('startButton');
+
+        startButton.addEventListener('click', async () => {
+            try {
+                // Solicitar acceso a la cámara
+                const stream = await navigator.mediaDevices.getUserMedia({ video: true });
+                video.srcObject = stream; // Mostrar el flujo de video en el elemento <video>
+            } catch (error) {
+                console.error("Error al acceder a la cámara: ", error);
+                alert("No se pudo acceder a la cámara. Asegúrate de permitir el acceso.");
+            }
+        });
+    </script>
+</body>
+</html>
